@@ -1,0 +1,53 @@
+
+/*để tránh lỗi thì cần import file less vào và file này dowload ở phần Source code bootstrap*/
+@import "../less/bootstrap.less";  
+div.container div.row > div{
+	background-color: yellow;
+	
+
+}
+
+div.row > div {
+	
+}
+
+div.my-row {
+	margin: 20px;
+}
+
+.my-table{
+	.table;
+	.table-bordered;
+	.table-striped;
+	.table-hover;
+}
+
+.my-table thead tr th {
+	.text-center;
+}
+
+.my-table tbody tr td {
+	vertical-align: middle;
+	/* căn giữa*/
+}
+
+			/* truy cập đến phần tử 1*/
+.my-table td:nth-child(1) {
+	width: 5%;
+	.text-center;
+}
+
+.my-table td:nth-child(2) {
+	width: 15%;
+	.text-center;
+}
+
+.my-table td:nth-child(3) {
+	width: 80%;
+	.text-justify; /*class hỗ trợ căn đều 2 bên*/
+}
+/* coppy ở file bootstrap.css và sửa*/
+.my-table > tbody > tr:hover > td,
+.my-table > tbody > tr:hover > th {
+  background-color: #ebe9f9;
+}
